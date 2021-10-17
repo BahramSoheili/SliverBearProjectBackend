@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\SilverBear\SilverBear.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Machines\Events\Raised\Created\" />
+    <Folder Include="Machines\Events\Raised\Deleted\" />
+    <Folder Include="Machines\Events\Raised\Updated\" />
+    <Folder Include="Machines\Events\Subscribed\Created\" />
+    <Folder Include="Machines\Events\Subscribed\Deleted\" />
+    <Folder Include="Machines\Events\Subscribed\Updated\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="M6T.Core.TupleModelBinder" Version="1.3.0" />
+    <PackageReference Include="Marten" Version="3.13.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>
